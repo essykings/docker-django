@@ -1,0 +1,23 @@
+version: '2'
+services:
+  my_django18_project:
+    container_name: django
+    build: .
+    volumes:
+      - .:/src
+    restart: always
+    ports:
+      - 8001:8001
+    links:
+      - db
+    depends_on:
+      - db
+  db:
+    image: postgres:9.6
+
+
+
+
+
+
+    
