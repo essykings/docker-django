@@ -16,4 +16,4 @@ class Task(models.Model):
     date = models.DateTimeField(default=now)
    
     class Meta:
-        app_label = 'members'
+        app_label = 'tasks'

@@ -6,7 +6,7 @@ ADD . /src/
 WORKDIR /src
 
 
-CMD python manage.py collectstatic ;python manage.py migrate; gunicorn my_django18_project.wsgi -b 0.0.0.0:8000 
+CMD python manage.py collectstatic ;python manage.py migrate;  gunicorn my_django18_project.wsgi -b 0.0.0.0:8000 
 
 EXPOSE 8000
 
